@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  color: lightblue;
+  text-align: center;
+}
+
+.main .navBar {
+  display: flex;
+  height: 5rem;
+  justify-content: space-evenly;
+  align-items: center;
+  background: url("./assets/road.jpg") no-repeat center center/cover;
+  margin-bottom: -10px;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: steelblue;
+  font-size: 1.5rem;
+  padding: 12px 25px;
+  background-color: gold;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
+
+a:hover {
+  background-color: steelblue;
+  color: gold;
+}

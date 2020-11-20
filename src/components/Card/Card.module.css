@@ -1,0 +1,82 @@
+article {
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  display: grid;
+  background: rgb(140, 157, 168);
+  background: radial-gradient(
+    circle,
+    rgba(140, 157, 168, 1) 0%,
+    rgba(49, 74, 99, 1) 100%
+  );
+}
+
+article .title {
+  width: 90%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: dotted 2px black;
+}
+
+article .title *:first-child {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+article .title *:last-child {
+  color: rebeccapurple;
+  margin-bottom: 20px;
+}
+
+article .counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+article .counter h3 {
+  color: #3e5151;
+}
+
+article .counter p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: blue;
+}
+
+button {
+  width: 15%;
+  height: 85%;
+  line-height: 85%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  text-align: center;
+  background: radial-gradient(circle, #3e5151 0%, #decba4 100%);
+}
+
+button:hover {
+  background: radial-gradient(circle, #decba4 100%, #3e5151 0%);
+}
+
+button:first-child {
+  color: red;
+}
+
+button:last-child {
+  color: green;
+}
+
+article .counter .buttons {
+  height: 3rem;
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
