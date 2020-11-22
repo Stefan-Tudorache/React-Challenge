@@ -1,0 +1,45 @@
+.card {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  position: relative;
+  z-index: 0;
+
+  .front {
+    max-height: 400px;
+    max-width: 300px;
+    text-align: center;
+    display: grid;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
+    background: rgb(140, 157, 168);
+    background: radial-gradient(
+      circle,
+      rgba(140, 157, 168, 1) 0%,
+      rgba(49, 74, 99, 1) 100%
+    );
+    backface-visibility: hidden;
+    position: absolute;
+  }
+
+  .back {
+    max-height: 400px;
+    max-width: 300px;
+    text-align: center;
+    display: grid;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2), 0 4px 7px rgba(0, 0, 0, 0.27);
+    background: rgb(140, 157, 168);
+    background: radial-gradient(
+      circle,
+      rgba(140, 157, 168, 1) 0%,
+      rgba(49, 74, 99, 1) 100%
+    );
+    backface-visibility: hidden;
+    position: relative;
+
+    transform: rotateY(180deg);
+  }
+}
+
+.faceDown {
+  transform: rotateY(180deg);
+}

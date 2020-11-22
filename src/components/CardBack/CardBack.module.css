@@ -1,0 +1,45 @@
+article {
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  display: grid;
+  background: rgb(140, 157, 168);
+  background: radial-gradient(
+    circle,
+    rgba(140, 157, 168, 1) 0%,
+    rgba(49, 74, 99, 1) 100%
+  );
+}
+
+.title {
+  width: 90%;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-bottom: dotted 2px black;
+}
+.title *:first-child {
+  color: gold;
+  margin-bottom: 10px;
+}
+.title *:last-child {
+  color: #3e5151;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.counter h3 {
+  color: #3e5151;
+}
+
+.counter p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: gold;
+}

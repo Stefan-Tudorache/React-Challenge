@@ -1,29 +1,26 @@
-import React from "react";
-import styles from "./Card.module.css";
-import State from "../State/State"
+import React, {useState} from 'react';
+import CardFront from "../CardFront";
+import CardBack from "../CardBack";
+import styles from "./Card.module.scss";
 
 const Card = (props) => {
 
-const {name, role} = props.person
+  const [isFaceDown, setFaceDown] = useState(false);
+  const faceDown = isFaceDown ? styles.faceDown : "";
 
-// const State = () => {
-//   const [count, setCount] = useState(0) 
-// }
+  const {person} = props;
+  return (
 
-  return (  
-    <article className={styles.article}>
-      <div className={styles.title}>
-        <h3>Name: {name} </h3>
-        <h3>Role: {role} </h3>
-      </div>
-      <section className={styles.counter}>
-        <h3>Counter</h3>
-        <State />
-      </section>
+    <article className={`${styles.card} ${faceDown}`}
+    onClick={() => setFaceDown(!isFaceDown)}>
+      <div className={styles.front}>
+        <CardFront person={person}/>
+      </div> 
+      <div className={styles.back}>
+        <CardBack person={person}/>
+      </div> 
     </article>
   )
 }
-
-
 
 export default Card;

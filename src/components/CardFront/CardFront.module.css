@@ -11,7 +11,7 @@ article {
   );
 }
 
-article .title {
+.title {
   width: 90%;
   justify-self: center;
   display: flex;
@@ -20,27 +20,26 @@ article .title {
   border-bottom: dotted 2px black;
 }
 
-article .title *:first-child {
+.title h3:first-child {
   color: gold;
   margin-bottom: 20px;
 }
 
-article .title *:last-child {
+.title h3:last-child {
   color: rebeccapurple;
   margin-bottom: 20px;
 }
 
-article .counter {
+.counter {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-
-article .counter h3 {
+.counter h3 {
   color: #3e5151;
 }
 
-article .counter p {
+.counter p {
   font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 3px;
@@ -72,11 +71,25 @@ button:last-child {
   color: green;
 }
 
-article .counter .buttons {
+.counter .buttons {
   height: 3rem;
   background-color: rebeccapurple;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+  color: #3e5151;
+}
+
+.rating span {
+  color: red;
+}
+
+.rating span *:nth-child(2) {
+  margin: 0 10px;
 }
